@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #db4c3f;
+  background-color: #316ca3;
   color: #fff;
 }
 
@@ -114,6 +114,5 @@ form input[type='submit'] {
 }
 
 .title.done {
-  text-decoration: line-through;
-  color: #ccc;
+  color: #00ff15;
 }
