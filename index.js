@@ -32,12 +32,15 @@ app.use(
     })
 )
 app.use(express.json())
+// Config a pasta Public
+    app.use(express.static(__dirname + '/public'));
 
+
+//
 app.use('/tasks' , tasksRoutes )
 
-// Config a pasta Public
-app.use(express.static(__dirname + '/public'));
+
 
 conn.sync().then(()=> {
-    app.listen(3001)
+    app.listen(3002)
 }).catch((err) => console.log(err))

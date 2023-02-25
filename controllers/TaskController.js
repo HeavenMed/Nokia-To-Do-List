@@ -1,6 +1,6 @@
 const Task = require('../models/Task')
 
-module.exports = class TaskController {
+module.exports = class TaskController { //É criado uma classe ObjetivoController e Exportada
 
     static createTask( req , res) {
         res.render('tasks/create')
